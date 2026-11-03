@@ -1,0 +1,10 @@
+{
+  "name": "CheTunes AI",
+  "description": "CheTunes: An AI-powered music recommender that suggests new music based on your tastes, mood, and favorite artists. Get personalized playlists and justifications for every recommendation.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

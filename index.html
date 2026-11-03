@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheTunes - AI Music Recommender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #111827; /* bg-gray-900 */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+
+  <!-- Dify Chatbot Integration -->
+  <script>
+   window.difyChatbotConfig = {
+    token: '08TtTFcaSlmurK9d',
+    inputs: {},
+    systemVariables: {},
+    userVariables: {},
+   }
+  </script>
+  <script
+   src="https://udify.app/embed.min.js"
+   id="08TtTFcaSlmurK9d"
+   defer>
+  </script>
+  <style>
+    #dify-chatbot-bubble-button {
+      background-color: #1C64F2 !important;
+    }
+    #dify-chatbot-bubble-window {
+      width: 24rem !important;
+      max-width: calc(100vw - 2rem) !important;
+      height: 40rem !important;
+      max-height: calc(100vh - 6rem) !important;
+    }
+  </style>
+</body>
+</html>
